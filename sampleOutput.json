@@ -1,0 +1,71 @@
+{
+    "status": "ok",
+    "totalResults": 5,
+    "articles": [
+        {
+            "source": {
+                "id": "espn",
+                "name": "ESPN"
+            },
+            "author": "Pete Thamel",
+            "title": "SEC directs Georgia, Tennessee to 'postpone' college football series with Sooners given Oklahoma's upcoming conference move",
+            "description": "Given Oklahoma's upcoming move to the SEC, along with Texas, the SEC announced on Wednesday it directed Georgia and Tennessee to postpone their series with the Sooners.",
+            "url": "http://espn.go.com/college-football/story/_/id/34592162/sec-directs-georgia-tennessee-postpone-college-football-series-oklahoma-sooners",
+            "urlToImage": "https://a3.espncdn.com/combiner/i?img=%2Fphoto%2F2020%2F0921%2Fr749005_1296x729_16%2D9.jpg",
+            "publishedAt": "2022-09-14T18:42:00Z",
+            "content": "Two high profile non-conference series have been scuttled due to the impending departure of Oklahoma and Texas to the SEC, which is scheduled for 2025.\r\nThe SEC announced on Wednesday that it \"direct… [+1342 chars]"
+        },
+        {
+            "source": {
+                "id": "talksport",
+                "name": "TalkSport"
+            },
+            "author": "Phil Spencer",
+            "title": "Gary Neville describes US investors as ‘a clear and present danger’ to English football after Chelsea own...",
+            "description": "",
+            "url": "https://talksport.com/football/1194708/gary-neville-us-investment-todd-boehly-chelsea-premier-league-glazer-family/",
+            "urlToImage": "https://talksport.com/wp-content/uploads/sites/5/2022/09/RAS-TALKSPORT-NEVILLE-BOEHLY.jpg?strip=all&quality=100&w=1500&h=1000&crop=1",
+            "publishedAt": "2022-09-14T15:47:49Z",
+            "content": "Gary Neville has described US investment into English football as ‘a clear and present danger to the pyramid and fabric of the game’.\r\nThe Manchester United legend has been a long-time advocate of in… [+2575 chars]"
+        },
+        {
+            "source": {
+                "id": "four-four-two",
+                "name": "FourFourTwo"
+            },
+            "author": "PA Staff",
+            "title": "Glenavon’s Christopher Atherton, 13, becomes youngest senior footballer in UK",
+            "description": "Northern Irish schoolboy Christopher Atherton became the youngest senior footballer in the United Kingdom on Tuesday night aged just 13.",
+            "url": "https://www.fourfourtwo.com/news/glenavons-christopher-atherton-13-becomes-youngest-senior-footballer-in-uk-1663166676000",
+            "urlToImage": "https://cdn.mos.cms.futurecdn.net/UFUBcDxLJdfLATCbRurSjm-1200-80.jpg",
+            "publishedAt": "2022-09-14T14:44:36Z",
+            "content": "Northern Irish schoolboy Christopher Atherton became the youngest senior footballer in the United Kingdom on Tuesday night aged just 13.\r\nThe youngster broke a record which had stood for 42 years whe… [+2044 chars]"
+        },
+        {
+            "source": {
+                "id": "four-four-two",
+                "name": "FourFourTwo"
+            },
+            "author": "PA Staff",
+            "title": "Todd Boehly’s All-Star idea the latest floated in bid to revamp English football",
+            "description": "Chelsea owner Todd Boehly wants to launch a Premier League North versus South All-Star match as part of plans to revolutionise elements of English football.",
+            "url": "https://www.fourfourtwo.com/news/todd-boehlys-all-star-idea-the-latest-floated-in-bid-to-revamp-english-football-1663153130000",
+            "urlToImage": "https://cdn.mos.cms.futurecdn.net/CgeZJgbRsJyQoWXNZSGhyL-1200-80.jpg",
+            "publishedAt": "2022-09-14T10:58:50Z",
+            "content": "Chelsea owner Todd Boehly wants to launch a Premier League North versus South All-Star match as part of plans to revolutionise elements of English football.\r\nThe American is not the first to come up … [+2286 chars]"
+        },
+        {
+            "source": {
+                "id": "espn-cric-info",
+                "name": "ESPN Cric Info"
+            },
+            "author": null,
+            "title": "Five famous people (and one cat) you didn't know have ESPNcricinfo profiles | ESPNcricinfo.com",
+            "description": "Why do a footballer, a Nobel laureate and a prime minister (no, not Imran Khan) find themselves in the ESPNcricinfo player database? | ESPNcricinfo.com",
+            "url": "http://www.espncricinfo.com/story/_/id/29102695/five-famous-people-one-cat-know-espncricinfo-profiles",
+            "urlToImage": "https://a.espncdn.com/i/cricket/cricinfo/1221668_1296x1296.gif",
+            "publishedAt": "2020-04-27T07:20:43Z",
+            "content": "Why do a cat, a footballer, a Nobel laureate and a prime minister find themselves in the ESPNcricinfo database? Here are six player profiles you wouldn't have expected we had.\r\nPeter the catThe only … [+5504 chars]"
+        }
+    ]
+}
