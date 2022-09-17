@@ -33,7 +33,7 @@ export class News extends Component {
     //async function returns a promise and await can be used within the function. adding await as a prefix of a function will cause the async function to pause until the await function is resolved.
 
     async getDetails() {
-        let url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=49e0395ed3eb4228b6380f6ea3ffb9b4&page=${this.state.page}&pagesize=${this.props.pageSize}`;
+        let url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=${this.props.apiKey}&page=${this.state.page}&pagesize=${this.props.pageSize}`;
         let data = await fetch(url);
         let parsedData = await data.json();
         this.setState({ articles: parsedData.articles, totalResults: parsedData.totalResults, loading: false, page: this.state.page + 1 });
