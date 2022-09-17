@@ -36,7 +36,7 @@ export class News extends Component {
         let url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=49e0395ed3eb4228b6380f6ea3ffb9b4&page=${this.state.page}&pagesize=${this.props.pageSize}`;
         let data = await fetch(url);
         let parsedData = await data.json();
-        this.setState({ articles: parsedData.articles, totalResults: parsedData.totalResults, loading: false });
+        this.setState({ articles: parsedData.articles, totalResults: parsedData.totalResults, loading: false, page: this.state.page + 1 });
         document.title = `${this.props.category} | NewsDump`;
     }
 
@@ -72,9 +72,9 @@ export class News extends Component {
                     <div className="container">
                         <div className="row">
                             {/* map the elements of articles after loading becomes false (after fetching and parsing data in getDetails function) */}
-                            {this.state.articles.map((element) => {
-                                return <div key={element.url} className="col-md-4">
-                                    <NewsItem title={element.title} description={element.description} imgUrl={element.urlToImage} newsUrl={element.url} author={element.author} publishedAt={element.publishedAt} source={element.source} />
+                            {this.state.articles.map((element, index) => {
+                                return <div key={index} className="col-md-4">
+                                    <NewsItem title={element.title} description={element.description} imgUrl={element.urlToImage} newsUrl={element.url} author={element.author} publishedAt={element.publishedAt} source={element.source}/>
                                 </div>
                             })}
                         </div>
