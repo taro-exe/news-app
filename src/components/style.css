@@ -1,1 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap');
+
+.dark-toggler-off {
+    border-radius: 50%;
+    position: sticky;
+    bottom: 2rem;
+    left: 95%;
+    height: 4rem;
+    width: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.dark-toggler-off:hover {
+    border: 0.4rem solid #212529;
+    transition: border 0.2s;
+}
+
+.dark-toggler-on {
+    color: grey;
+    border-radius: 50%;
+    position: sticky;
+    bottom: 2rem;
+    left: 95%;
+    height: 4rem;
+    width: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: 0.4rem solid #212529;
+    box-shadow: 0 0 0.5rem 0.1rem #747e89;
+}
