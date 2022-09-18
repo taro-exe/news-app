@@ -54,7 +54,8 @@ const App = () => {
         {/* just in case someone types some random path in the address bar that doesn't exist */}
         <Route path="*" element={<p>Path not resolved</p>} />
 
-        
+
+
 
       </Routes>
       <DarkToggler toggleDark={toggleDark} mode={mode}/>
