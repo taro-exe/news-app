@@ -1,18 +1,25 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import { useLayoutEffect } from 'react';
+import { React, useEffect } from 'react'
+import { Link, useLocation } from 'react-router-dom'
 import logo from './dump.png'
 
 //returned in the root component i.e. App.js
 
 const NavBar = (props) => {
 
+  const location = useLocation();
+  let pathname = location.pathname;
+  pathname = pathname.replace('/', '');
+  pathname = pathname.charAt(0).toUpperCase() + pathname.slice(1).toLowerCase();
+
   //when a link on the navbar is clicked, it will be highlighted after unhighliting the previously highlighted link
   let handleNavLink = (event) => {
     const elems = document.querySelectorAll(".active");
 
-    [].forEach.call(elems, function (el) {
+    elems.forEach(function (el) {
       el.classList.remove("active");
     });
+
     event.target.classList.add('active');
   }
 
@@ -22,8 +29,23 @@ const NavBar = (props) => {
     [].forEach.call(elems, function (el) {
       el.classList.remove("active");
     });
-    document.getElementsByClassName('nav-home').classList.add('active');
+    document.getElementsByClassName('nav-home')[0].classList.add('active');
   }
+
+  useEffect(() => {
+
+    const element = document.getElementsByClassName('nav-link');
+    for (const e of element) {
+      console.log(e.innerHTML)
+      if (e.innerHTML === pathname) {
+        e.classList.add('active');
+      }
+
+      if (location.pathname === '/') {
+        document.getElementsByClassName('nav-home')[0].classList.add('active')
+      }
+    }
+  }, [])
 
   return (
     <nav className={`navbar navbar-expand-lg navbar-dark bg-dark`} style={{ position: 'sticky', top: 0, zIndex: 2 }}>
@@ -36,7 +58,7 @@ const NavBar = (props) => {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <Link className="nav-link active nav-home" to="/" onClick={handleNavLink}>Home</Link>
+              <Link className="nav-link nav-home" to="/" onClick={handleNavLink}>Home</Link>
             </li>
             <li className="nav-item">
               <Link className="nav-link" to="/business" onClick={handleNavLink}>Business</Link>
